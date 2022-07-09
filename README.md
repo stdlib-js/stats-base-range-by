@@ -32,14 +32,30 @@ The [**range**][range] is defined as the difference between the maximum and mini
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-range-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
+var rangeBy = require( '@stdlib/stats-base-range-by' );
 ```
 
 #### rangeBy( N, x, stride, clbk\[, thisArg] )
@@ -96,7 +112,7 @@ var cnt = context.count;
 The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to access every other element
 
 ```javascript
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var floor = require( '@stdlib/math-base-special-floor' );
 
 function accessor( v ) {
     return v * 2.0;
@@ -112,8 +128,8 @@ var v = rangeBy( N, x, 2, accessor );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var floor = require( '@stdlib/math-base-special-floor' );
 
 function accessor( v ) {
     return v * 2.0;
@@ -187,9 +203,9 @@ var v = rangeBy.ndarray( 3, x, 1, x.length-3, accessor );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
-import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var rangeBy = require( '@stdlib/stats-base-range-by' );
 
 function accessor( v ) {
     return v * 2.0;
@@ -234,7 +250,7 @@ console.log( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -264,8 +280,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-range-by.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-range-by
 
-[test-image]: https://github.com/stdlib-js/stats-base-range-by/actions/workflows/test.yml/badge.svg?branch=v0.0.8
-[test-url]: https://github.com/stdlib-js/stats-base-range-by/actions/workflows/test.yml?query=branch:v0.0.8
+[test-image]: https://github.com/stdlib-js/stats-base-range-by/actions/workflows/test.yml/badge.svg?branch=v0.0.9
+[test-url]: https://github.com/stdlib-js/stats-base-range-by/actions/workflows/test.yml?query=branch:v0.0.9
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-range-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-range-by?branch=main
@@ -302,17 +318,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/drange]: https://github.com/stdlib-js/stats-base-drange/tree/deno
+[@stdlib/stats/base/drange]: https://github.com/stdlib-js/stats-base-drange
 
-[@stdlib/stats/base/max-by]: https://github.com/stdlib-js/stats-base-max-by/tree/deno
+[@stdlib/stats/base/max-by]: https://github.com/stdlib-js/stats-base-max-by
 
-[@stdlib/stats/base/min-by]: https://github.com/stdlib-js/stats-base-min-by/tree/deno
+[@stdlib/stats/base/min-by]: https://github.com/stdlib-js/stats-base-min-by
 
-[@stdlib/stats/base/nanrange-by]: https://github.com/stdlib-js/stats-base-nanrange-by/tree/deno
+[@stdlib/stats/base/nanrange-by]: https://github.com/stdlib-js/stats-base-nanrange-by
 
-[@stdlib/stats/base/range]: https://github.com/stdlib-js/stats-base-range/tree/deno
+[@stdlib/stats/base/range]: https://github.com/stdlib-js/stats-base-range
 
-[@stdlib/stats/base/srange]: https://github.com/stdlib-js/stats-base-srange/tree/deno
+[@stdlib/stats/base/srange]: https://github.com/stdlib-js/stats-base-srange
 
 <!-- </related-links> -->
 
