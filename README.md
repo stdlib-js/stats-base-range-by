@@ -50,6 +50,11 @@ The [**range**][range] is defined as the difference between the maximum and mini
 ## Usage
 
 ```javascript
+import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-range-by/tags). For example,
+
+```javascript
 import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@v0.1.1-deno/mod.js';
 ```
 
@@ -200,7 +205,7 @@ var v = rangeBy.ndarray( 3, x, 1, x.length-3, accessor );
 ```javascript
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
-import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@v0.1.1-deno/mod.js';
+import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
 
 function accessor( v ) {
     return v * 2.0;
