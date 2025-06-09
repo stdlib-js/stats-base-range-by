@@ -43,32 +43,14 @@ The [**range**][range] is defined as the difference between the maximum and mini
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-range-by
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var rangeBy = require( '@stdlib/stats-base-range-by' );
+import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
 ```
 
 #### rangeBy( N, x, stride, clbk\[, thisArg] )
@@ -125,7 +107,7 @@ var cnt = context.count;
 The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to access every other element
 
 ```javascript
-var floor = require( '@stdlib/math-base-special-floor' );
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
 
 function accessor( v ) {
     return v * 2.0;
@@ -141,8 +123,8 @@ var v = rangeBy( N, x, 2, accessor );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var floor = require( '@stdlib/math-base-special-floor' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
 
 function accessor( v ) {
     return v * 2.0;
@@ -216,9 +198,9 @@ var v = rangeBy.ndarray( 3, x, 1, x.length-3, accessor );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var rangeBy = require( '@stdlib/stats-base-range-by' );
+var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
+import rangeBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-range-by@deno/mod.js';
 
 function accessor( v ) {
     return v * 2.0;
@@ -263,7 +245,7 @@ console.log( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -334,17 +316,17 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/strided/drange]: https://github.com/stdlib-js/stats-strided-drange
+[@stdlib/stats/strided/drange]: https://github.com/stdlib-js/stats-strided-drange/tree/deno
 
-[@stdlib/stats/strided/max-by]: https://github.com/stdlib-js/stats-strided-max-by
+[@stdlib/stats/strided/max-by]: https://github.com/stdlib-js/stats-strided-max-by/tree/deno
 
-[@stdlib/stats/base/min-by]: https://github.com/stdlib-js/stats-base-min-by
+[@stdlib/stats/base/min-by]: https://github.com/stdlib-js/stats-base-min-by/tree/deno
 
-[@stdlib/stats/base/nanrange-by]: https://github.com/stdlib-js/stats-base-nanrange-by
+[@stdlib/stats/base/nanrange-by]: https://github.com/stdlib-js/stats-base-nanrange-by/tree/deno
 
-[@stdlib/stats/base/range]: https://github.com/stdlib-js/stats-base-range
+[@stdlib/stats/base/range]: https://github.com/stdlib-js/stats-base-range/tree/deno
 
-[@stdlib/stats/strided/srange]: https://github.com/stdlib-js/stats-strided-srange
+[@stdlib/stats/strided/srange]: https://github.com/stdlib-js/stats-strided-srange/tree/deno
 
 <!-- </related-links> -->
 
