@@ -4,7 +4,29 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-09)
+## Unreleased (2025-07-04)
+
+<section class="features">
+
+### Features
+
+-   [`34e5e27`](https://github.com/stdlib-js/stdlib/commit/34e5e2770f16fb82b758fcc9983cc8c834910a07) - add accessor protocol support to `stats/base/range-by` [(#5914)](https://github.com/stdlib-js/stdlib/pull/5914)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#5680](https://github.com/stdlib-js/stdlib/issues/5680)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +34,7 @@
 
 <details>
 
+-   [`34e5e27`](https://github.com/stdlib-js/stdlib/commit/34e5e2770f16fb82b758fcc9983cc8c834910a07) - **feat:** add accessor protocol support to `stats/base/range-by` [(#5914)](https://github.com/stdlib-js/stdlib/pull/5914) _(by Dhruvil Mehta, Athan Reines, stdlib-bot, Gururaj Gurram)_
 -   [`43d18b4`](https://github.com/stdlib-js/stdlib/commit/43d18b4e771a2fcb6bc6c634641f267587d514e0) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`1782090`](https://github.com/stdlib-js/stdlib/commit/17820909290d01df1ee44cc370d18e74d76291d9) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`63eeda1`](https://github.com/stdlib-js/stdlib/commit/63eeda110c5f6ff1bea1d99281b147ba92ec5377) - **refactor:** update paths _(by Aayush Khanna)_
@@ -28,9 +51,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
+-   Athan Reines
+-   Dhruvil Mehta
 -   Gururaj Gurram
 -   Philipp Burckhardt
 
