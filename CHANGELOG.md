@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-04)
+## Unreleased (2025-07-05)
 
 <section class="features">
 
@@ -15,6 +15,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`4f80b80`](https://github.com/stdlib-js/stdlib/commit/4f80b80dc67daff48e7e6c00aea02b3ad695fa44) - ensure original input array is passed to callback
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
@@ -34,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`4f80b80`](https://github.com/stdlib-js/stdlib/commit/4f80b80dc67daff48e7e6c00aea02b3ad695fa44) - **fix:** ensure original input array is passed to callback _(by Athan Reines)_
 -   [`34e5e27`](https://github.com/stdlib-js/stdlib/commit/34e5e2770f16fb82b758fcc9983cc8c834910a07) - **feat:** add accessor protocol support to `stats/base/range-by` [(#5914)](https://github.com/stdlib-js/stdlib/pull/5914) _(by Dhruvil Mehta, Athan Reines, stdlib-bot, Gururaj Gurram)_
 -   [`43d18b4`](https://github.com/stdlib-js/stdlib/commit/43d18b4e771a2fcb6bc6c634641f267587d514e0) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`1782090`](https://github.com/stdlib-js/stdlib/commit/17820909290d01df1ee44cc370d18e74d76291d9) - **refactor:** update paths _(by Gururaj Gurram)_
